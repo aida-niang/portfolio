@@ -35,47 +35,174 @@ h1 {
 h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    color: #026873;
+    color: #000;
     background-color: #fff;
     border-radius: 4px;
-    width:100px;
     text-align: center;
     text-decoration: none;
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #F2668B;
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
     font-weight: normal; /* pour enlever le gras */
     line-height: 2;
 }
 
-h4 {
-    font-family: 'Courier New', Courier, monospace;
+.main-menu ul {
+    list-style: none;
     text-align: center;
-    font-size: 20px;
-    color: #026873;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
 }
 
-h5 {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #fff;
-    text-align: justify;
-    font-weight: normal;
+.main-menu ul li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
-h6 {
-font-size: 14px;
+.main-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu ul li :hover {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #F2668B;
+}
+
+/* Banner */
+.banner {
+    background-size: cover;
+}
+
+.contactform , .contacts {
+    margin: 20px;
+}
+
+/* contact Form */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
     font-weight: bold;
-    color: #294193;
-    text-align: center; /* Centre le texte sous les images */
 }
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #026873;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #026873;
+}
+
+a {
+    color: #026873;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* contactez-moi */
+
+.contacts {
+   text-align: center;
+   align-content: center;
+   margin: 20px;
+    
+}
+
+.contacts button {
+    background-color: #F2668B;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #026873;
+    color: white;
+    text-align: left;
+    width: 100%;
+    height: auto;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+.reseaux img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Menu de navigation verticale */
+footer p {
+    text-align: center;
+} 
+/* Menu de navigation verticale */
+footer ul {
+    list-style:none;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+
+/* Style des liens par défaut */
+footer li a { 
+    color: white;
+    text-decoration: none;
+}
+
+/* Style des liens lors du survol */
+footer ul a:hover {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #F2668B;
+}
+  
 
 /* Styles pour le hamburger icon */
 
@@ -170,208 +297,9 @@ font-size: 14px;
         width: 100%;
         background-size: cover ;
     }
-    
+
     html {
         max-width: 375px;
     }
-    
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:large;
-}
-
-
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-
-
-/* Banner */
-.banner {
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 5%;
-}
-
-/* Propriétés spécifiques aux petits écrans (Mobile First) */
-#home {
-    text-align: center;
-}
-
-#projects .project {
-    margin-bottom: 1rem;
-}
-
-/* contacts */
-.contact-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-input[type="text"],
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.checkbox {
-    margin-bottom: 20px;
-}
-
-button {
-    background-color: #026873;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    display: block;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #026873;
-}
-
-a {
-    color: #026873;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* contacts */
-.contact-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-input[type="text"],
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.checkbox {
-    margin-bottom: 20px;
-}
-
-button {
-    background-color: #026873;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    display: block;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #026873;
-}
-
-a {
-    color: #026873;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #2c5d3f;
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
-
-/* Section avec logo,  menu, liens et réseaux sociaux */
-.nav-footer {
-    display: flex;
-    justify-content:space-between; 
-    align-items:baseline;
-}
-
-/* Menu de navigation verticale */
-.nav-footer a {
-    font-size: 18px;
-} 
-
-.nav-footer ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-
-/* Style des liens par défaut */
-.nav-footer ul a { 
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-    text-decoration: none;
-}
-
-/* Style des liens lors du survol */
-.nav-footer ul a:hover {
-    text-decoration:underline;
-}
-  
-
-.lien a {
-    font-size: 18px;
-}
