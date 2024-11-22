@@ -22,7 +22,7 @@
         <!-- Menu -->
         <nav class="main-menu">
             <ul>
-                <li><a href="./apropos.html">À propos</a></li>
+                <li><a href="./index.html">À propos</a></li>
                 <li><a href="./projets.html">Mes Projets</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
@@ -36,51 +36,40 @@
     <img src="./Images/banner2.gif" alt="banner_Dada">
     </section>
      
-    <section class="contacts">
-        <h1>Contactez-moi!</h1>
-        <a href="mailto:contact@dada.fr"><img src="./Images/e-mail.png" alt="email" height="50px" width="50px"></a>
-        <a href="mailto:contact@dada.fr"><h2>contact@aidaniang.fr</h2></a>
-        <a href="callto:contact@dada.fr"><img src="./Images/telephone.png" alt="Téléphone" height="50px" width="50px"></a>
-       <a href="callto:0771067198"><h2>07 71 06 71 98</h2></a>
-        <!-- Bouton Mail -->
-    <button class="worktogether"><a href="mailto:contact@dada.fr">On travaille ensemble ?</a></button>
-    </section>
-
-    <section class="contactform">
-        <h1>Une question?</h1>
-
-    <form action="#" method="post">
-        <!-- Civilité -->
-        <label for="civilite">Civilité :</label>
-        <select id="civilite" name="civilite" required>
-            <option value="">--Sélectionnez--</option>
-            <option value="Monsieur">Monsieur</option>
-            <option value="Madame">Madame</option>
-            <option value="Mademoiselle">Mademoiselle</option>
-        </select>
-
-        <!-- Nom et Prénom -->
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom" required>
-
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required>
-
-        <!-- Adresse postale -->
-        <label for="adresse">Adresse postale :</label>
-        <input type="text" id="adresse" name="adresse" required>
-
-        <!-- Checkbox Politique de confidentialité -->
-        <div class="checkbox">
-            <input type="checkbox" id="confidentialite" name="confidentialite" required>
-            <label for="confidentialite">J'accepte la <a href="#">politique de confidentialité</a> de l'entreprise</label>
+     <!-- Mes projets -->
+     <section class="projects">
+        <h1>Quelques projets !</h1>
+        <!-- Projet 1 -->
+        <div class="project-item">
+            <div class="project-image-container">
+                <img src="./Images/aida.jpg" alt="Projet 1" class="projects-images">
+                <div class="project-title">Titre du Projet 1</div>
+            </div>
+            <p>Une brève description de ce projet.</p>
         </div>
 
-        <!-- Bouton de validation -->
-        <button type="submit">Envoyer</button>
-    </form>
-</section>
+        <!-- Projet 2 -->
+        <div class="project-item">
+            <div class="project-image-container">
+                <img src="./Images/aida.jpg" alt="Projet 2" class="projects-images">
+                <div class="project-title">Titre du Projet 2</div>
+            </div>
+            <p>Une brève description de ce projet.</p>
+        </div>
 
+        <!-- Projet 3 -->
+        <div class="project-item">
+            <div class="project-image-container">
+                <img src="./Images/aida.jpg" alt="Projet 3" class="projects-images">
+                <div class="project-title">Titre du Projet 3</div>
+            </div>
+            <p>Une brève description de ce projet.</p>
+        </div>
+
+        <!-- Bouton pour voir plus -->
+        <button class="btn-view-more">
+            <a href="./projets.html">Voir plus ...</a>
+        </button>
     </section>
 
 </main>
