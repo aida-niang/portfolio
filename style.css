@@ -36,7 +36,6 @@ h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: #000;
-    background-color: #fff;
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
@@ -51,6 +50,35 @@ h3 {
     line-height: 2;
 }
 
+h4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #026873;
+    text-align: left;
+    margin: 20px;
+}
+
+h5 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+h6 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: justify;
+}
 .main-menu ul {
     list-style: none;
     text-align: center;
@@ -73,16 +101,159 @@ h3 {
     text-decoration: none;
     text-shadow: 2px 2px 2px #F2668B;
 }
-
+/* Page index */
 /* Banner */
+/* Section resume / Banner */
 .banner {
-    background-size: cover;
+    position: relative; /* Nécessaire pour positionner le texte sur l'image */
 }
 
+/* banner & Texte */
+.text-resume {
+    display: flex; 
+    justify-content: space-between; 
+    position: absolute; /* Superpose le texte sur l'image */
+    bottom: 20px; /* Positionne à 20px du bas de l'image */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Ajuste pour aligner avec le centre */
+    width: 100%; 
+    color: white; /* Couleur des textes */
+    text-align: center; /* Centre le texte à l'intérieur de chaque élément */
+}
+
+/* Texte individuel */
+.text-resume-item {
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    padding: 10px 15px; /* Espacement interne */
+    border-radius: 8px; 
+    font-size: 16px; 
+    flex: 1; /* Donne une largeur égale à chaque texte */
+    margin: 0 10px; 
+}
+
+.worktogether {
+    margin-top: 20px;
+    background-color: #F2668B;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.worktogether a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.worktogether:hover {
+    background-color: #024a5a;
+    text-decoration: none;
+}
+/* Section À propos */
+.apropos {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px; /* Limite la largeur totale */
+}
+
+/* Conteneur principal */
+.apropos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Espacement entre l'image et le texte */
+}
+
+/* Image du portrait */
+.portrait {
+    width: 90%;
+    max-width: 300px; /* Taille maximale pour l'image */
+    border-radius: 8px; /* Donne un effet circulaire à l'image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Texte de la section À propos */
+.text-apropos {
+    max-width: 600px; /* Limite la largeur du texte */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+
+/* Projets */
+.projects {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Projet individuel */
+.project-item {
+    margin-bottom: 20px; /* Espacement entre les projets */
+}
+
+/* Conteneur de l'image et du titre */
+.project-image-container {
+    position: relative; /* Nécessaire pour superposer le titre */
+    display: inline-block; /* Permet de centrer et limiter la largeur */
+    width: 300px; /* Ajustez selon la taille désirée */
+    height: auto;
+}
+
+/* Image du projet */
+.projects-images {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    top: 20px;
+}
+
+/* Titre du projet */
+.project-title {
+    position: absolute;
+    bottom: 10px; /* Place le texte vers le bas de l'image */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 15px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1rem;
+    text-align: center;
+    width: 80%; /* Ajuste la largeur du titre */
+}
+
+/* Bouton "Voir plus" */
+.btn-view-more {
+    margin-top: 20px;
+    background-color: #F2668B;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-view-more a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-view-more:hover {
+    background-color: #024a5a;
+}
+
+
+/* Page contact */
 .contactform , .contacts {
     margin: 20px;
 }
-
 /* contact Form */
 .contact-form {
     background-color: white;
@@ -117,7 +288,7 @@ input[type="checkbox"] {
 }
 
 button {
-    background-color: #026873;
+    background-color: #F2668B;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -147,13 +318,6 @@ a:hover {
    align-content: center;
    margin: 20px;
     
-}
-
-.contacts button {
-    background-color: #F2668B;
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
 }
 
 
@@ -299,7 +463,7 @@ footer ul a:hover {
     }
 
     html {
-        max-width: 430px;
+        max-width: 375px;
     }
 }
 
