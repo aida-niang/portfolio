@@ -489,6 +489,7 @@ footer ul a:hover {
     
 }
 
+
 /* Version Desktop */
 @media screen and (min-width: 1399px) {
 
@@ -513,6 +514,7 @@ footer ul a:hover {
         display: flex;
         flex-direction: row;
         justify-content:space-around;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
@@ -524,6 +526,11 @@ footer ul a:hover {
     }
     .text-resume {
         display: none; 
+    }
+
+    .contacts h2, .contacts h3, .contacts p {
+        color: #fff;
+
     }
     
 
