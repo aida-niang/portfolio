@@ -513,7 +513,7 @@ footer ul a:hover {
     .projects-container {
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
+        justify-content:space-between;
         flex-wrap: wrap;
         gap: 10px;
     }
@@ -521,25 +521,46 @@ footer ul a:hover {
     .footer-container {
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
+        justify-content:space-between;
         gap: 10px;
     }
     .text-resume {
         display: none; 
     }
 
-    .contacts h2, .contacts h3, .contacts p {
-        color: #fff;
-
-    }
-    
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        gap: 10px;
+    } 
 
 }
-
 
 /* Affichage Tablette */
 @media screen and (min-width: 768px) and (max-width: 1399px) {
     
+        .projects-container {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    
+        .footer-container {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            gap: 10px;
+        }
+    
+        .contact-container {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            gap: 10px;
+        } 
 
 
 }
