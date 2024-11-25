@@ -62,6 +62,8 @@ h5 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     color: #fff;
+    font-weight: normal;
+    text-align:center;
 }
 
 h6 {
@@ -73,7 +75,7 @@ h6 {
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
     color: #000;
     margin-bottom: 20px;
@@ -131,6 +133,15 @@ p {
     margin: 0 10px; 
 }
 
+.text-resume-bis {
+    display: flex; 
+    justify-content: space-between; 
+    bottom: 20px; /* Positionne à 20px du bas de l'image */
+    width: 100%; 
+    color: white; /* Couleur des textes */
+    text-align: center; /* Centre le texte à l'intérieur de chaque élément */
+}
+
 .worktogether {
     margin-top: 20px;
     background-color: #F2668B;
@@ -185,6 +196,13 @@ p {
 
 
 /* Projets */
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Par défaut : empiler les projets */
+    gap: 20px; /* Espacement vertical */
+    align-items: center;
+}
+
 .projects {
     padding: 20px;
     text-align: center;
@@ -193,6 +211,10 @@ p {
 /* Projet individuel */
 .project-item {
     margin-bottom: 20px; /* Espacement entre les projets */
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 /* Conteneur de l'image et du titre */
@@ -461,9 +483,56 @@ footer ul a:hover {
         width: 100%;
         background-size: cover ;
     }
-
-    html {
-        max-width: 375px;
+    .text-resume-bis {
+        display: none; 
     }
+    
 }
 
+/* Version Desktop */
+@media screen and (min-width: 1399px) {
+
+    .resume-container {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        gap: 10px;
+        background-color: #024a5a;
+    }
+
+    .contacts {
+        padding: 40px;
+    }
+
+    .apropos-container {
+        flex-direction: row; /* Affichage côte à côte sur grands écrans */
+        align-items: flex-start;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        gap: 10px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        gap: 10px;
+    }
+    .text-resume {
+        display: none; 
+    }
+    
+
+}
+
+
+/* Affichage Tablette */
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+    
+
+
+}
