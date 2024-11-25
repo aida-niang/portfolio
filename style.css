@@ -554,6 +554,9 @@ footer ul a:hover {
             justify-content:space-between;
             gap: 10px;
         }
+        .text-resume-bis {
+            display: none; 
+        }
     
         .contact-container {
             display: flex;
@@ -561,6 +564,7 @@ footer ul a:hover {
             justify-content:space-between;
             gap: 10px;
         } 
+     
 
 
 }
